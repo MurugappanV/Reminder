@@ -1,17 +1,12 @@
-package com.rethinking.silentreminder
+package com.rethinking.silentreminder.ui
 
 /**
  * Created by Murugappan V on 10/19/2018.
  */
 
-import android.content.Intent
-import android.net.Uri
-import android.os.Build
 import android.os.Bundle
-import android.provider.Settings
 import android.support.v7.app.AppCompatActivity
-import android.view.View
-import android.widget.Toast
+import com.rethinking.silentreminder.R
 
 class MainActivity : AppCompatActivity() {
 
