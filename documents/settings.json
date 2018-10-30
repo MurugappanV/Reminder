@@ -1,0 +1,74 @@
+[
+    {
+        "reminderTypeId": 1, // bithday
+        "titleText": "Birthday to whom ?",
+        "titleFromContactEnable": true,
+        "dateTypeId": 1, // date only
+        "startDateText": "When is <titletext> birthday?",
+        "repetationText": "",
+        "repetationEditEnableId": 1, // only show , no edit
+        "defaultRepetationId": 1, // year(1)
+        "endDateEnable": false,
+        "linkText": "Enter communication web link ...",
+        "contactText": "Choose from contacts",
+        "emailText": "Enter contact email address...",
+        "remindBeforeText": "Want to remind before ?",
+        "defaultRemindBeforeId": 3, // day(-1)
+        "remindMessageText": "What to do ?",
+        "defaultRemindMessageText": "Buy birthday gift for <title>"
+    },
+    {
+        "reminderTypeId": 2, // aniversary
+        "titleText": "Anniversary to whom ?",
+        "titleFromContactEnable": true,
+        "dateTypeId": 1, // date only
+        "startDateText": "When is the <titleText> anniversary?",
+        "repetationText": "",
+        "repetationEditEnableId": 1, // only show , no edit
+        "defaultRepetationId": 1, // year(1)
+        "endDateEnable": false,
+        "linkText": "Enter communication web link ...",
+        "contactText": "Choose from contacts",
+        "emailText": "Enter contact email address...",
+        "remindBeforeText": "Want to remind before ?",
+        "defaultRemindBeforeId": 3, // day(-1)
+        "remindMessageText": "What to do ?",
+        "defaultRemindMessageText": "Buy aniversary gift for <title>"
+    },
+    {
+        "reminderTypeId": 3, // Bill/Payments
+        "titleText": "Whom to pay ?",
+        "titleFromContactEnable": true,
+        "dateTypeId": 2, // date and time
+        "startDateText": "When to pay ?",
+        "repetationText": "",
+        "repetationEditEnableId": 2, // show and edit
+        "defaultRepetationId": 2, // month(1)
+        "endDateEnable": true,
+        "linkText": "Enter communication web link ...",
+        "contactText": "Choose from contacts",
+        "emailText": "Enter contact email address...",
+        "remindBeforeText": "Want to remind before ?",
+        "defaultRemindBeforeId": 3, // day(-1)
+        "remindMessageText": "What to do ?",
+        "defaultRemindMessageText": "Reserve amount to pay <title>"
+    },
+    {
+        "reminderTypeId": 1, // bithday
+        "titleText": "To whom ?",
+        "titleFromContactEnable": true,
+        "dateTypeId": 1, // date only
+        "startDateText": "When ?",
+        "repetationText": "",
+        "repetationEditEnableId": 2, // show and edit
+        "defaultRepetationId": 1, // year(1)
+        "endDateEnable": true,
+        "linkText": "Enter communication web link ...",
+        "contactText": "Choose from contacts",
+        "emailText": "Enter contact email address...",
+        "remindBeforeText": "Want to remind before ?",
+        "defaultRemindBeforeId": 4, // day(0)
+        "remindMessageText": "What to do ?",
+        "defaultRemindMessageText": "Reminder for <title>"
+    },
+]
