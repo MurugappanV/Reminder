@@ -1,4 +1,4 @@
-package com.rethinking.silentreminder
+package com.rethinking.silentreminder.ui
 
 import android.app.Service
 import android.content.Context
@@ -11,6 +11,7 @@ import android.view.MotionEvent
 import android.view.View
 import android.view.WindowManager
 import android.widget.ImageView
+import com.rethinking.silentreminder.R
 
 /**
  * Created by Murugappan V on 10/19/2018.
