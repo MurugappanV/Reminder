@@ -1,6 +1,7 @@
 package com.rethinking.silentreminder.inject
 
 import com.rethinking.silentreminder.application.SilentReminderApplication
+import com.rethinking.silentreminder.inject.builder.MainActivityBuilder
 import dagger.Component
 import dagger.android.AndroidInjector
 import dagger.android.support.AndroidSupportInjectionModule
@@ -12,7 +13,8 @@ import javax.inject.Singleton
  */
 @Singleton
 @Component(modules = arrayOf(
-        AndroidSupportInjectionModule::class))
+        AndroidSupportInjectionModule::class,
+        MainActivityBuilder::class))
 interface AppComponent : AndroidInjector<SilentReminderApplication> {
     @Component.Builder
     abstract class Builder : AndroidInjector.Builder<SilentReminderApplication>()

@@ -8,7 +8,6 @@ import android.support.annotation.IdRes
 import android.support.v4.app.Fragment
 import android.view.View
 import android.view.ViewGroup
-import com.rethinking.silentreminder.application.SilentReminderApplication
 import dagger.android.support.DaggerAppCompatActivity
 
 
@@ -87,11 +86,6 @@ abstract class BaseActivity : DaggerAppCompatActivity() {
                 grantResults.size > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED);
     }
 
-    override fun onUserInteraction() {
-        super.onUserInteraction()
-        //3 min logout implementation
-        //(SilentReminderApplication.getContext() as SilentReminderApplication).touch()
-    }
 
     open protected fun onPermissionResult(requestCode: Int, granted: Boolean) {
         //Sub class can override this method if required
