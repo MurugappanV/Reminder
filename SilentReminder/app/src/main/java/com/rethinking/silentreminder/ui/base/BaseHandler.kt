@@ -1,4 +1,4 @@
-package com.emory.mcubbed.ui.base
+package com.rethinking.silentreminder.ui.base
 
 import android.view.View
 
