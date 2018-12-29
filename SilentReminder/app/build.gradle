@@ -4,6 +4,10 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
+apply plugin: 'kotlin-kapt'
+
+apply plugin: 'realm-android'
+
 android {
     compileSdkVersion 28
     defaultConfig {
@@ -20,13 +24,23 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    dataBinding {
+        enabled = true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     /*Kotlin*/
-    implementation"org.jetbrains.kotlin:kotlin-stdlib-jre7:${versions.kotlin}"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:${versions.kotlin}"
 
     /*Support*/
     implementation "com.android.support:appcompat-v7:${versions.appcompat}"
@@ -39,6 +53,7 @@ dependencies {
     /*Android Life Cycle Components*/
     implementation "android.arch.lifecycle:reactivestreams:${versions.arch_comp}"
     implementation "android.arch.lifecycle:extensions:${versions.arch_comp}"
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     kapt "android.arch.lifecycle:compiler:${versions.arch_comp}"
 
     /*Data Binding*/
@@ -47,7 +62,6 @@ dependencies {
     /* Multidex*/
     implementation "com.android.support:multidex:${versions.multidex}"
 
-
     /*Dagger dependency for injection*/
     implementation "com.google.dagger:dagger-android:${versions.dagger}"
     implementation "com.google.dagger:dagger-android-support:${versions.dagger}"
@@ -55,7 +69,6 @@ dependencies {
     kapt "com.google.dagger:dagger-android-processor:${versions.dagger}"
     implementation 'javax.annotation:jsr250-api:1.0'
     implementation 'javax.inject:javax.inject:1'
-
 
     /*Test*/
     testImplementation 'junit:junit:4.12'
